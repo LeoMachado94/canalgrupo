@@ -1,0 +1,33 @@
+.jAudio
+  &--ui
+
+  &--status-bar
+
+  &--controls
+    li
+      button
+        span
+          &:before, &:after
+            +transition("border-color")
+
+  &--thumb
+    +transition(all, .5s)
+
+  &--time
+    *
+    &-elapsed
+    &-total
+
+  &--details
+
+  &--progress-bar
+    &-wrapper
+    &-played
+      +transition(all, .2s)
+    &-pointer
+
+  &--playlist
+    &-item
+      +transition(all, .5s)
+      *
+        +transition

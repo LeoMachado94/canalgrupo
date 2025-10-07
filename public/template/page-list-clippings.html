@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+  <meta name="author" content="#">
+  <title>Canal Service - Dashboard</title>
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png" type="image/png">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <!-- Icons -->
+  <link rel="stylesheet" href="assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <!-- Page plugins -->
+  <!-- Argon CSS -->
+  <link rel="stylesheet" href="assets/css/argon.css?v=1.1.0" type="text/css">
+</head>
+
+<body>
+  <!-- Sidenav -->
+  <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="scrollbar-inner">
+      <!-- Brand -->
+      <div class="sidenav-header d-flex align-items-center">
+        <a class="navbar-brand" href="dashboard.html">
+          <img src="assets/img/brand/logo.svg" class="navbar-brand-img" alt="...">
+        </a>
+        <div class="ml-auto">
+          <!-- Sidenav toggler -->
+          <div class="sidenav-toggler d-none d-xl-block" data-action="sidenav-unpin" data-target="#sidenav-main">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-inner">
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+          <!-- Nav items -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#navbar-dashboards">
+                <i class="fas fa-tachometer-alt text-primary"></i>
+                <span class="nav-link-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <i class="fas fa-clipboard-list text-orange"></i>
+                <span class="nav-link-text">Clippings</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-users text-info"></i>
+                <span class="nav-link-text">Clientes</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-comments text-pink"></i>
+                <span class="nav-link-text">Assuntos</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-bullhorn text-default"></i>
+                <span class="nav-link-text">Veículos</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/calendar.html">
+                <i class="far fa-newspaper text-red"></i>
+                <span class="nav-link-text">Editorias/Programas</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pages/widgets.html">
+                <i class="far fa-file-alt text-green"></i>
+                <span class="nav-link-text">Resumos</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/charts.html">
+                <i class="ni ni-chart-pie-35 text-info"></i>
+                <span class="nav-link-text">Relatórios</span>
+              </a>
+            </li>
+            
+          </ul>
+          <!-- Divider -->
+          <hr class="my-3">
+          <!-- Navigation -->
+          <ul class="navbar-nav mb-md-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank">
+                <i class="fas fa-cog"></i>
+                <span class="nav-link-text">Configurações</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/foundation/colors.html" target="_blank">
+                <i class="fas fa-user"></i>
+                <span class="nav-link-text">Usuários</span>
+              </a>
+            </li>
+      
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Main content -->
+  <div class="main-content" id="panel">
+    <!-- Topnav -->
+    <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Search form -->
+          <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+            <div class="form-group mb-0">
+              <div class="input-group input-group-alternative input-group-merge">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+                </div>
+                <input class="form-control" placeholder="Pesquisar" type="text">
+              </div>
+            </div>
+            <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </form>
+          <!-- Navbar links -->
+          <ul class="navbar-nav align-items-center ml-md-auto">
+            <li class="nav-item d-xl-none">
+              <!-- Sidenav toggler -->
+              <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item d-sm-none">
+              <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
+                <i class="ni ni-zoom-split-in"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="ni ni-bell-55"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right py-0 overflow-hidden">
+                <!-- Dropdown header -->
+                <div class="px-3 py-3">
+                  <h6 class="text-sm text-muted m-0">Você tem <strong class="text-secon">12</strong> notificações.</h6>
+                </div>
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  <a href="#!" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Avatar -->
+                        <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+                        <i class="fas fa-tv"></i></div>
+                      </div>
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0 text-sm">Clipping TV <div class="negativa">Negativo</div></h4>
+                          </div>
+                          <div class="text-right text-muted">
+                            <small>2 de Jan</small>
+                          </div>
+                        </div>
+                        <p class="text-sm mb-0">Negativa do programa às 11:30</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#!" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Avatar -->
+                       <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
+                        <i class="fas fa-broadcast-tower"></i></div>
+                      </div>
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                             <h4 class="mb-0 text-sm">Clipping Rádio <div class="positiva">Positiva</div></h4>
+                          </div>
+                          <div class="text-right text-muted">
+                            <small>2 de Jan</small>
+                          </div>
+                        </div>
+                        <p class="text-sm mb-0">Positiva do programa às 11:30</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#!" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Avatar -->
+                        <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
+                        <i class="fas fa-print"></i></div>
+                      </div>
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0 text-sm">Clipping Impresso <div class="negativa">Negativo</div></h4>
+                          </div>
+                          <div class="text-right text-muted">
+                            <small>2 de Jan</small>
+                          </div>
+                        </div>
+                        <p class="text-sm mb-0">Negativa do programa às 11:30</p>
+                      </div>
+                    </div>
+                  </a>
+                  
+                </div>
+                <!-- View all -->
+                <a href="#!" class="dropdown-item text-center text-secon font-weight-bold py-3">Ver todas</a>
+              </div>
+            </li>
+        
+          </ul>
+          <ul class="navbar-nav align-items-center ml-auto ml-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="media align-items-center">
+                  <span class="avatar avatar-sm rounded-circle">
+                    <img alt="Image placeholder" src="assets/img/theme/team-4.jpg">
+                  </span>
+                  <div class="media-body ml-2 d-none d-lg-block">
+                    <span class="mb-0 text-sm">John Snow</span>
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-header noti-title">
+                  <h6 class="text-overflow m-0">Bem-vindo!</h6>
+                </div>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-single-02"></i>
+                  <span>Meu perfil</span>
+                </a>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-settings-gear-65"></i>
+                  <span>Configurações</span>
+                </a>
+             
+                <div class="dropdown-divider"></div>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-user-run"></i>
+                  <span>Sair</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+
+    <!-- Header -->
+    <div class="header bg-primary pb-6">
+      <div class="container-fluid">
+        <div class="header-body">
+          <div class="row align-items-center py-4">
+            <div class="col-lg-6 col-7">
+              <h6 class="h2 text-white d-inline-block mb-0">Clippings</h6>
+              <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                  <li class="breadcrumb-item"><a href="#"><i class="fas fa-clipboard-list"></i></a></li>
+                  <li class="breadcrumb-item"><a href="#">Adicionar Novo Clipping</a></li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-lg-6 col-5 text-right">
+              <button type="button" class="btn btn-slack btn-icon">
+                <span class="btn-inner--icon"><i class="fas fa-plus"></i></span>
+                <span class="btn-inner--text">Cadastrar novo</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <!-- Card header -->
+            <div class="card-header border-0">
+              <h3 class="mb-0">Lista de clippings</h3>
+            </div>
+            <!-- Light table -->
+            <div class="table-responsive">
+              <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col" class="sort" data-sort="Nº">Nº</th>
+                    <th scope="col" class="sort" data-sort="DataVeic">Data de Veiculação</th>
+                    <th scope="col" class="sort" data-sort="DataCad">Data de Cadastro</th>
+                    <th scope="col" class="sort" data-sort="cliente">Cliente</th>
+                    <th scope="col" class="sort" data-sort="tipo">Tipo</th>
+                    <th scope="col" class="sort" data-sort="meio">Meio</th>
+                    <th scope="col" class="sort" data-sort="classificacao">Classificação</th>
+                    <th scope="col" class="sort" data-sort="usuario">Usuário</th>
+                    <th scope="col" class="sort" data-sort="opcoes">Opções</th>
+                  </tr>
+                </thead>
+                <tbody class="list">
+                <!-- inicio list -->  
+                  <tr>
+                    <td>190933</td>
+                    <td><span class="text-muted">10/09/2018</span></td>
+                    <td><span class="text-muted">10/09/2018</span></td>
+                    <th scope="row">
+                      <div class="media align-items-center">
+                        <a href="#" class="avatar rounded-circle mr-3">
+                          <img alt="Image placeholder" src="assets/img/theme/bootstrap.jpg">
+                        </a>
+                        <div class="media-body">
+                          <span class="name mb-0 text-sm">Associação Comercial e Industrial de Imperatriz</span>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="budget">Espontânea</td>
+                    <td class="budget">Site/Blog</td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">Positiva</span>
+                      </span>
+                    </td>
+                    <td>
+                      <div class="avatar-group">
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                          <img alt="Image placeholder" src="assets/img/theme/team-1.jpg">
+                        </a>
+                      </div>
+                    </td>
+                    <td class="table-actions">
+                      <a href="#!" class="table-action table-action-visualizar" data-toggle="tooltip" data-original-title="Visualizar">
+                       <i class="fas fa-eye"></i>
+                      </a>
+                      <a href="#!" class="table-action table-action-edit" data-toggle="tooltip" data-original-title="Editar">
+                        <i class="far fa-edit"></i>
+                      </a>
+                      <a href="#!" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Deletar">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </td>
+                  </tr>
+                <!-- fim list -->  
+
+                <!-- inicio list -->  
+                  <tr>
+                    <td>190933</td>
+                    <td><span class="text-muted">10/09/2018</span></td>
+                    <td><span class="text-muted">10/09/2018</span></td>
+                    <th scope="row">
+                      <div class="media align-items-center">
+                        <a href="#" class="avatar rounded-circle mr-3">
+                          <img alt="Image placeholder" src="assets/img/theme/bootstrap.jpg">
+                        </a>
+                        <div class="media-body">
+                          <span class="name mb-0 text-sm">Associação Comercial e Industrial de Imperatriz</span>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="budget">Espontânea</td>
+                    <td class="budget">Site/Blog</td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i>
+                        <span class="status">Positiva</span>
+                      </span>
+                    </td>
+                    <td>
+                      <div class="avatar-group">
+                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                          <img alt="Image placeholder" src="assets/img/theme/team-1.jpg">
+                        </a>
+                      </div>
+                    </td>
+                    <td class="table-actions">
+                      <a href="#!" class="table-action table-action-visualizar" data-toggle="tooltip" data-original-title="Visualizar">
+                       <i class="fas fa-eye"></i>
+                      </a>
+                      <a href="#!" class="table-action table-action-edit" data-toggle="tooltip" data-original-title="Editar">
+                        <i class="far fa-edit"></i>
+                      </a>
+                      <a href="#!" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Deletar">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </td>
+                  </tr>
+                <!-- fim list -->  
+
+
+              
+                
+              
+                  
+                </tbody>
+              </table>
+            </div>
+            <!-- Card footer -->
+            <div class="card-footer py-4">
+              <nav aria-label="...">
+                <ul class="pagination justify-content-end mb-0">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">
+                      <i class="fas fa-angle-left"></i>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      <i class="fas fa-angle-right"></i>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer pt-0">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-lg-12">
+            <div class="copyright text-center text-muted">
+              &copy; 2020 <a href="#" class="font-weight-1 ml-1" target="_blank">Canal Grupo - Todos os direitos reservados.</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- Argon Scripts -->
+  <!-- Core -->
+  <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/js-cookie/js.cookie.js"></script>
+  <script src="assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <!-- Optional JS -->
+  <script src="assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="assets/vendor/chart.js/dist/Chart.extension.js"></script>
+  <!-- Argon JS -->
+  <script src="assets/js/argon.js?v=1.1.0"></script>
+  <!-- Demo JS - remove this in your project -->
+  <script src="assets/js/demo.min.js"></script>
+</body>
+
+</html>

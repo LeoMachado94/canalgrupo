@@ -1,0 +1,79 @@
+version: '3.8'
+
+services:
+  # Serviço PHP-FPM
+  proxy:
+    build:
+      dockerfile: ./docker/dev/nginx.Dockerfile
+      context: .
+    volumes:
+        - ./public:/src/public
+        - ./storage/app/public:/src/public/storage  # Adiciona acesso ao diretório de imagens
+    ports:
+      - 80:80
+    depends_on:
+      - php
+    networks:
+      - canal-grupo
+
+  php:
+    depends_on:
+      - mysql
+      - redis
+    build:
+      dockerfile: ./docker/dev/php.Dockerfile
+      context: .
+    expose:
+      - 9004
+    volumes:
+      - ./:/src
+    environment:
+      - APP_ENV=local
+#    command: [ "./start.sh" ]
+    networks:
+      - canal-grupo
+
+  # Serviço MySQL
+  mysql:
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 3s
+      retries: 10
+    volumes:
+      - db-mysql:/var/lib/mysql
+    networks:
+      - canal-grupo
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_DATABASE: canalgrupo
+
+  # Serviço Redis
+  redis:
+    image: redis:alpine
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    networks:
+      - canal-grupo
+
+  # Serviço Mailpit (em vez do Mailhog)
+  mailpit:
+    image: axllent/mailpit
+    restart: unless-stopped
+    ports:
+      - "8025:8025"  # Interface web
+      - "1025:1025"  # SMTP
+    networks:
+      - canal-grupo
+
+volumes:
+  db-mysql:
+
+networks:
+  canal-grupo:
+    external: false
+    name: canal-grupo
