@@ -1,0 +1,53 @@
+{
+    "admin": {
+        "status": 302,
+        "location": "http://localhost/home",
+        "status_flash": null,
+        "errors": [],
+        "old": [],
+        "web": true,
+        "client": false
+    },
+    "client": {
+        "status": 302,
+        "location": "http://localhost/home",
+        "status_flash": null,
+        "errors": [],
+        "old": [],
+        "web": false,
+        "client": true
+    },
+    "wrong_password": {
+        "status": 302,
+        "location": "http://localhost/login",
+        "status_flash": null,
+        "errors": {
+            "email": [
+                "Essas credenciais não foram encontradas em nossos registros."
+            ]
+        },
+        "old": {
+            "email": "alfa@golden.test"
+        },
+        "web": false,
+        "client": false
+    },
+    "empty": {
+        "status": 302,
+        "location": "http://localhost/login",
+        "status_flash": null,
+        "errors": {
+            "email": [
+                "O campo email é obrigatório."
+            ],
+            "password": [
+                "O campo senha é obrigatório."
+            ]
+        },
+        "old": {
+            "email": null
+        },
+        "web": false,
+        "client": false
+    }
+}

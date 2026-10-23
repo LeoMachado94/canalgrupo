@@ -181,10 +181,11 @@ class HomeController extends Controller
         if (Auth::guard('client')->user()) {
             $bind = $bind->toArray();
             array_push($bind, Auth::guard('client')->user()->id);
-            $classification = Clipping::whereRaw('MONTH(date) IN (?,?,?,?,?,?) AND YEAR(date) IN (?) AND client_id = ?', $bind)
+            // PHP 7.4 ignored bindings beyond the placeholders; PHP 8 rejects them, so keep only the ones PHP 7.4 used.
+            $classification = Clipping::whereRaw('MONTH(date) IN (?,?,?,?,?,?) AND YEAR(date) IN (?) AND client_id = ?', array_slice($bind, 0, 8))
                 ->orderBy('date', 'asc')->get();
 	} else {
-            $classification = Clipping::whereRaw('MONTH(date) IN (?,?,?,?,?,?) AND YEAR(date) IN (?)', $bind)
+            $classification = Clipping::whereRaw('MONTH(date) IN (?,?,?,?,?,?) AND YEAR(date) IN (?)', array_slice($bind->toArray(), 0, 7))
                 ->orderBy('date', 'asc')->get();
 	}
         $classification_clippings = $classification->count();

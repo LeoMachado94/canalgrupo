@@ -1,0 +1,42 @@
+{
+    "with_cc": {
+        "success": true,
+        "title": "Emails Enviados!",
+        "message": "Emails enviados com sucesso!",
+        "icon": "success"
+    },
+    "without_cc": {
+        "success": true,
+        "title": "Emails Enviados!",
+        "message": "Emails enviados com sucesso!",
+        "icon": "success"
+    },
+    "without_email": {
+        "success": true,
+        "title": "Nenhum email cadastrado!",
+        "message": "O cliente não possui um email cadastrado para receber o relatório!",
+        "icon": "warning"
+    },
+    "missing_client": {
+        "success": false,
+        "title": "Cliente Não Encontrado!",
+        "message": "No query results for model [App\\Models\\Client] 999",
+        "icon": "error"
+    },
+    "sent": [
+        {
+            "to": [
+                "alfa@golden.test"
+            ],
+            "cc": [
+                "copia@golden.test"
+            ]
+        },
+        {
+            "to": [
+                "beta@golden.test"
+            ],
+            "cc": []
+        }
+    ]
+}

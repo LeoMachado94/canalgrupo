@@ -2,12 +2,15 @@
 
 namespace App\Models\Antigo;
 
+use App\Models\Concerns\SerializesDatesAsDatabaseFormat;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Model;
 
 class Veiculo extends Model
 {
+    use SerializesDatesAsDatabaseFormat;
+
     protected $table = 'veiculos';
     protected $primaryKey = 'CODVEICULO';
     protected $connection = 'origin';

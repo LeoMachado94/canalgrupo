@@ -1,0 +1,70 @@
+{
+    "draw": 0,
+    "recordsTotal": 3,
+    "recordsFiltered": 3,
+    "data": [
+        {
+            "id": 1,
+            "state_id": 1,
+            "city_id": 1,
+            "user_id": 1,
+            "name": "Cliente Alfa",
+            "logo": "clients/avatars/avatar_1.png",
+            "cnpj": "11.111.111/0001-11",
+            "contact": "Ana",
+            "email": "alfa@golden.test",
+            "active": 1,
+            "remember_token": null,
+            "created_at": "2026-01-10 08:30:00",
+            "updated_at": "2026-01-11 09:45:00",
+            "phones": [
+                {
+                    "id": 1,
+                    "client_id": 1,
+                    "phone_number": "41999990000",
+                    "created_at": "2026-01-10 08:30:00",
+                    "updated_at": "2026-01-11 09:45:00"
+                },
+                {
+                    "id": 2,
+                    "client_id": 1,
+                    "phone_number": "4133330000",
+                    "created_at": "2026-01-10 08:30:00",
+                    "updated_at": "2026-01-11 09:45:00"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "state_id": 2,
+            "city_id": 3,
+            "user_id": 1,
+            "name": "Cliente Beta",
+            "logo": null,
+            "cnpj": "22.222.222/0001-22",
+            "contact": "Bruno",
+            "email": "beta@golden.test",
+            "active": 1,
+            "remember_token": null,
+            "created_at": "2026-01-10 08:30:00",
+            "updated_at": "2026-01-11 09:45:00",
+            "phones": []
+        },
+        {
+            "id": 3,
+            "state_id": null,
+            "city_id": null,
+            "user_id": null,
+            "name": "Cliente Inativo",
+            "logo": null,
+            "cnpj": "33.333.333/0001-33",
+            "contact": null,
+            "email": null,
+            "active": 0,
+            "remember_token": null,
+            "created_at": "2026-01-10 08:30:00",
+            "updated_at": "2026-01-11 09:45:00",
+            "phones": []
+        }
+    ]
+}

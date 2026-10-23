@@ -1,4 +1,4 @@
-FROM php:7.4-fpm-alpine
+FROM php:8.4.27-fpm-alpine
 
 WORKDIR /src
 
@@ -9,7 +9,6 @@ RUN set -x \
         bash \
         git \
         openssh \
-        php-cli \
         zlib-dev \
         freetype-dev \
         libpng-dev \
@@ -33,28 +32,14 @@ RUN set -x \
         --with-webp \
     && docker-php-ext-install opcache bcmath exif pdo pdo_mysql zip gd intl pcntl
 
-# Instalar extensões PECL compatíveis com PHP 7.4
 RUN set -x \
     && apk add --no-cache --virtual .build-deps pcre-dev $PHPIZE_DEPS \
-    && pecl install redis-6.0.2 xdebug-3.1.6 pcov \
-    && docker-php-ext-enable redis xdebug pcov \
-    && apk del -f .build-deps
-
-# Instalar Imagick através do código fonte diretamente
-RUN set -x \
-    && apk add --no-cache --virtual .build-deps $PHPIZE_DEPS \
-    && mkdir -p /usr/src/php/ext/imagick \
-    && cd /usr/src/php/ext/imagick \
-    && curl -fsSL https://github.com/Imagick/imagick/archive/refs/tags/3.7.0.tar.gz | tar xz --strip-components=1 \
-    && phpize \
-    && ./configure \
-    && make \
-    && make install \
-    && docker-php-ext-enable imagick \
+    && pecl install redis-6.3.0 xdebug-3.5.3 pcov-1.0.12 imagick-3.8.1 \
+    && docker-php-ext-enable redis xdebug pcov imagick \
     && apk del -f .build-deps
 
 RUN set -x \
-    && curl -L https://getcomposer.org/composer.phar -o /usr/local/bin/composer \
+    && curl -L https://getcomposer.org/download/latest-stable/composer.phar -o /usr/local/bin/composer \
     && chmod +x /usr/local/bin/composer
 
 COPY . /src/

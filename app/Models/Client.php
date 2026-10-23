@@ -2,16 +2,15 @@
 
 namespace App\Models;
 
+use App\Models\Concerns\SerializesDatesAsDatabaseFormat;
 use App\Notifications\ClientResetPasswordNotification;
-use Guiliredu\BrazilianCityMigrationSeed\Models\City;
-use Guiliredu\BrazilianCityMigrationSeed\Models\State;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Storage;
 
 class Client extends Authenticatable
 {
-    use Notifiable;
+    use Notifiable, SerializesDatesAsDatabaseFormat;
     protected $guard = 'client';
     /**
      * The attributes that are mass assignable.

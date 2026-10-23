@@ -1,0 +1,52 @@
+{
+    "store_invalid": {
+        "status": 302,
+        "location": "http://localhost",
+        "flash": [],
+        "errors": {
+            "file": [
+                "O campo file é obrigatório."
+            ]
+        }
+    },
+    "store": {
+        "status": 302,
+        "location": "http://localhost/summaries",
+        "flash": {
+            "success": true,
+            "title": "Cadastrado!",
+            "message": "Resumo cadastrado com sucesso",
+            "icon": "success"
+        },
+        "errors": []
+    },
+    "update": {
+        "status": 302,
+        "location": "http://localhost/summaries",
+        "flash": {
+            "success": true,
+            "title": "Atualizado!",
+            "message": "Resumo atualizado com sucesso",
+            "icon": "success"
+        },
+        "errors": []
+    },
+    "summaries": [
+        {
+            "id": 1,
+            "client_id": 1,
+            "title": "Resumo Fev Revisado",
+            "date": "2026-02-27",
+            "file": "assets/files/summaries/resumo.pdf",
+            "active": 1
+        },
+        {
+            "id": 2,
+            "client_id": 1,
+            "title": "Resumo Março",
+            "date": "2026-03-01",
+            "file": "assets/files/summaries/UNIQID.pdf",
+            "active": 1
+        }
+    ]
+}

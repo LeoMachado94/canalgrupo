@@ -2,10 +2,13 @@
 
 namespace App\Models\Antigo;
 
+use App\Models\Concerns\SerializesDatesAsDatabaseFormat;
 use Illuminate\Database\Eloquent\Model;
 
 class Assunto extends Model
 {
+    use SerializesDatesAsDatabaseFormat;
+
     protected $table = 'assuntos';
     protected $primaryKey = 'CODASSUNTO';
     protected $connection = 'origin';

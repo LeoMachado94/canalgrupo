@@ -2,12 +2,13 @@
 
 namespace App\Models;
 
-use Guiliredu\BrazilianCityMigrationSeed\Models\City;
-use Guiliredu\BrazilianCityMigrationSeed\Models\State;
+use App\Models\Concerns\SerializesDatesAsDatabaseFormat;
 use Illuminate\Database\Eloquent\Model;
 
 class Vehicle extends Model
 {
+    use SerializesDatesAsDatabaseFormat;
+
     /**
      * The attributes that are mass assignable.
      *

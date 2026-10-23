@@ -2,13 +2,14 @@
 
 namespace App\Models;
 
+use App\Models\Concerns\SerializesDatesAsDatabaseFormat;
 use Carbon\Carbon;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
 
 class Clipping extends Model
 {
-    use Sluggable;
+    use Sluggable, SerializesDatesAsDatabaseFormat;
 
     public static function boot() {
         parent::boot();
@@ -16,11 +17,13 @@ class Clipping extends Model
 
     public static $skipMutators = [];
 
-    public function sluggable()
+    public function sluggable(): array
     {
         return [
             'slug' => [
-                'source' => 'title'
+                'source' => 'title',
+                // eloquent-sluggable 6 started duplicate suffixes at -1; newer versions start at -2.
+                'firstUniqueSuffix' => 1,
             ]
         ];
     }

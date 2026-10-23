@@ -1,0 +1,71 @@
+{
+    "store": {
+        "success": true,
+        "message": "Arquivo salvo com sucesso!",
+        "file": {
+            "clipping_id": 2,
+            "path": "clippings/2/materia_TIME.pdf",
+            "name": "materia_TIME.pdf",
+            "extension": "pdf",
+            "id": 6,
+            "type": "Documento",
+            "badge_color": "bg-dark text-white"
+        }
+    },
+    "store_invalid": 422,
+    "destroy": {
+        "success": true,
+        "message": "Arquivo removido com Sucesso!"
+    },
+    "destroy_missing": {
+        "success": false,
+        "message": "Attempt to read property \"path\" on null"
+    },
+    "files": [
+        {
+            "id": 1,
+            "clipping_id": 1,
+            "name": "foto_1.jpg",
+            "path": "clippings/1/foto_1.jpg",
+            "file_type": null,
+            "extension": "jpg",
+            "size": null
+        },
+        {
+            "id": 2,
+            "clipping_id": 1,
+            "name": "video_1.mp4",
+            "path": "clippings/1/video_1.mp4",
+            "file_type": null,
+            "extension": "mp4",
+            "size": null
+        },
+        {
+            "id": 3,
+            "clipping_id": 1,
+            "name": "audio_1.mp3",
+            "path": "clippings/1/audio_1.mp3",
+            "file_type": null,
+            "extension": "mp3",
+            "size": null
+        },
+        {
+            "id": 4,
+            "clipping_id": 1,
+            "name": "doc_1.pdf",
+            "path": "clippings/1/doc_1.pdf",
+            "file_type": null,
+            "extension": "pdf",
+            "size": null
+        },
+        {
+            "id": 6,
+            "clipping_id": 2,
+            "name": "materia_TIME.pdf",
+            "path": "clippings/2/materia_TIME.pdf",
+            "file_type": null,
+            "extension": "pdf",
+            "size": null
+        }
+    ]
+}

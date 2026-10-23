@@ -1,0 +1,12 @@
+{
+    "subject": "Relatório de Clipping(s)",
+    "attachments": [
+        [
+            "https://golden.nyc3.digitaloceanspaces.com/reports/report_x.pdf",
+            {
+                "as": "relatorio.pdf",
+                "mime": "application/pdf"
+            }
+        ]
+    ]
+}

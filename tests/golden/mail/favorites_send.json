@@ -1,0 +1,42 @@
+{
+    "ok": {
+        "success": true,
+        "title": "Emails Enviados!",
+        "message": "Emails enviados com sucesso!",
+        "icon": "success"
+    },
+    "today": {
+        "success": true,
+        "title": "Emails Enviados!",
+        "message": "Emails enviados com sucesso!",
+        "icon": "success"
+    },
+    "missing_client": {
+        "success": false,
+        "title": "Cliente Não Encontrado!",
+        "message": "Cliente Não Encontrado!",
+        "icon": "error"
+    },
+    "statuses": [
+        404,
+        200
+    ],
+    "sent": [
+        {
+            "to": [
+                "alfa@golden.test"
+            ],
+            "cc": [
+                "copia@golden.test"
+            ]
+        },
+        {
+            "to": [
+                "alfa@golden.test"
+            ],
+            "cc": [
+                "copia@golden.test"
+            ]
+        }
+    ]
+}

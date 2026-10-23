@@ -1,0 +1,59 @@
+{
+    "missing": {
+        "success": false,
+        "message": "Faltam informações para gerar os gráficos"
+    },
+    "full": {
+        "clippings_by_vehicle": [
+            {
+                "name": "Gazeta",
+                "qtde": 4,
+                "percent": 100
+            }
+        ],
+        "clippings_by_classification": [
+            {
+                "name": "Positiva",
+                "qtde": 2,
+                "color": "#29ab3a"
+            },
+            {
+                "name": "Negativa",
+                "qtde": 2,
+                "color": "#ba3b11"
+            }
+        ],
+        "clippings_by_source": [
+            {
+                "name": "Espontânea",
+                "qtde": 3
+            },
+            {
+                "name": "Release",
+                "qtde": 1
+            }
+        ]
+    },
+    "filtered": {
+        "clippings_by_vehicle": [
+            {
+                "name": "Gazeta",
+                "qtde": 2,
+                "percent": 100
+            }
+        ],
+        "clippings_by_classification": [
+            {
+                "name": "Positiva",
+                "qtde": 2,
+                "color": "#29ab3a"
+            }
+        ],
+        "clippings_by_source": [
+            {
+                "name": "Espontânea",
+                "qtde": 2
+            }
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Positiva",
+        "active": 1,
+        "created_at": "2026-01-10 08:30:00",
+        "updated_at": "2026-01-11 09:45:00"
+    },
+    {
+        "id": 2,
+        "name": "Indefinida",
+        "active": 1,
+        "created_at": "2026-01-10 08:30:00",
+        "updated_at": "2026-01-11 09:45:00"
+    },
+    {
+        "id": 3,
+        "name": "Negativa",
+        "active": 1,
+        "created_at": "2026-01-10 08:30:00",
+        "updated_at": "2026-01-11 09:45:00"
+    },
+    {
+        "id": 4,
+        "name": "Neutra",
+        "active": 1,
+        "created_at": "2026-01-10 08:30:00",
+        "updated_at": "2026-01-11 09:45:00"
+    }
+]

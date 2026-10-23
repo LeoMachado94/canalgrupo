@@ -1,0 +1,278 @@
+{
+    "store_invalid": {
+        "status": 302,
+        "location": "http://localhost",
+        "flash": [],
+        "errors": {
+            "client_id": [
+                "O campo client id é obrigatório."
+            ],
+            "title": [
+                "O campo título é obrigatório."
+            ],
+            "subject_matter_id": [
+                "O campo subject matter id é obrigatório."
+            ],
+            "middle_id": [
+                "O campo middle id é obrigatório."
+            ],
+            "vehicle_id": [
+                "O campo vehicle id é obrigatório."
+            ],
+            "editorial_id": [
+                "O campo editorial id é obrigatório."
+            ],
+            "classification_id": [
+                "O campo classification id é obrigatório."
+            ],
+            "exhibition_id": [
+                "O campo exhibition id é obrigatório."
+            ],
+            "source_id": [
+                "O campo source id é obrigatório."
+            ],
+            "date": [
+                "O campo data é obrigatório."
+            ],
+            "review": [
+                "O campo review é obrigatório."
+            ]
+        }
+    },
+    "store": {
+        "status": 302,
+        "location": "http://localhost/clippings/9/edit?action=create",
+        "flash": [],
+        "errors": []
+    },
+    "store_same_title": {
+        "status": 302,
+        "location": "http://localhost/clippings/10/edit?action=create",
+        "flash": [],
+        "errors": []
+    },
+    "update_create_action": {
+        "status": 302,
+        "location": "http://localhost/clippings",
+        "flash": {
+            "success": true,
+            "title": "Cadastrado!",
+            "message": "Clipping cadastrado com sucesso",
+            "icon": "success"
+        },
+        "errors": []
+    },
+    "update": {
+        "status": 302,
+        "location": "http://localhost/clippings",
+        "flash": {
+            "success": true,
+            "title": "Atualizado!",
+            "message": "Clipping atualizado com sucesso",
+            "icon": "success"
+        },
+        "errors": []
+    },
+    "update_invalid": {
+        "status": 302,
+        "location": "http://localhost",
+        "flash": [],
+        "errors": {
+            "date": [
+                "O campo data não corresponde ao formato d/m/Y."
+            ]
+        }
+    },
+    "table": [
+        {
+            "id": 1,
+            "client_id": 1,
+            "middle_id": 1,
+            "subject_matter_id": 1,
+            "vehicle_id": 1,
+            "editorial_id": 1,
+            "user_id": 1,
+            "classification_id": 1,
+            "exhibition_id": 1,
+            "source_id": 1,
+            "title": "Matéria golden 1",
+            "slug": "materia-golden-1",
+            "date": "2026-03-14",
+            "last_read": null,
+            "review": "<p>Resenha da matéria 1 com acentuação: ção, ã, é.</p>",
+            "active": 1,
+            "is_favorite": 1
+        },
+        {
+            "id": 2,
+            "client_id": 1,
+            "middle_id": 1,
+            "subject_matter_id": 2,
+            "vehicle_id": 1,
+            "editorial_id": 1,
+            "user_id": 1,
+            "classification_id": 3,
+            "exhibition_id": 2,
+            "source_id": 2,
+            "title": "Título alterado",
+            "slug": "materia-golden-2",
+            "date": "2026-03-03",
+            "last_read": "2026-03-05 14:20:00",
+            "review": "<p>Resenha da matéria 2 com acentuação: ção, ã, é.</p>",
+            "active": 1,
+            "is_favorite": 0
+        },
+        {
+            "id": 3,
+            "client_id": 1,
+            "middle_id": 2,
+            "subject_matter_id": 1,
+            "vehicle_id": 2,
+            "editorial_id": 2,
+            "user_id": 2,
+            "classification_id": 4,
+            "exhibition_id": 1,
+            "source_id": null,
+            "title": "Matéria golden 3",
+            "slug": "materia-golden-3",
+            "date": "2026-02-20",
+            "last_read": null,
+            "review": "<p>Resenha da matéria 3 com acentuação: ção, ã, é.</p>",
+            "active": 1,
+            "is_favorite": 1
+        },
+        {
+            "id": 4,
+            "client_id": 2,
+            "middle_id": 2,
+            "subject_matter_id": 3,
+            "vehicle_id": 2,
+            "editorial_id": 2,
+            "user_id": 2,
+            "classification_id": 1,
+            "exhibition_id": 2,
+            "source_id": 1,
+            "title": "Matéria golden 4",
+            "slug": "materia-golden-4",
+            "date": "2026-02-10",
+            "last_read": null,
+            "review": "<p>Resenha da matéria 4 com acentuação: ção, ã, é.</p>",
+            "active": 1,
+            "is_favorite": 0
+        },
+        {
+            "id": 5,
+            "client_id": 1,
+            "middle_id": 3,
+            "subject_matter_id": 2,
+            "vehicle_id": 1,
+            "editorial_id": 1,
+            "user_id": 1,
+            "classification_id": 2,
+            "exhibition_id": 1,
+            "source_id": 2,
+            "title": "Matéria golden 5",
+            "slug": "materia-golden-5",
+            "date": "2026-01-05",
+            "last_read": null,
+            "review": "<p>Resenha da matéria 5 com acentuação: ção, ã, é.</p>",
+            "active": 1,
+            "is_favorite": 0
+        },
+        {
+            "id": 6,
+            "client_id": 2,
+            "middle_id": 1,
+            "subject_matter_id": 3,
+            "vehicle_id": 1,
+            "editorial_id": 1,
+            "user_id": 1,
+            "classification_id": 4,
+            "exhibition_id": 2,
+            "source_id": 1,
+            "title": "Matéria golden 6",
+            "slug": "materia-golden-6",
+            "date": "2025-11-18",
+            "last_read": null,
+            "review": "<p>Resenha da matéria 6 com acentuação: ção, ã, é.</p>",
+            "active": 1,
+            "is_favorite": 1
+        },
+        {
+            "id": 7,
+            "client_id": 1,
+            "middle_id": 1,
+            "subject_matter_id": 1,
+            "vehicle_id": 1,
+            "editorial_id": 1,
+            "user_id": 2,
+            "classification_id": 1,
+            "exhibition_id": 1,
+            "source_id": 1,
+            "title": "Matéria golden 7",
+            "slug": "materia-golden-7",
+            "date": "2025-10-01",
+            "last_read": null,
+            "review": "<p>Resenha da matéria 7 com acentuação: ção, ã, é.</p>",
+            "active": 1,
+            "is_favorite": 0
+        },
+        {
+            "id": 8,
+            "client_id": 1,
+            "middle_id": 1,
+            "subject_matter_id": 1,
+            "vehicle_id": 1,
+            "editorial_id": 1,
+            "user_id": 1,
+            "classification_id": 3,
+            "exhibition_id": 1,
+            "source_id": 1,
+            "title": "Matéria golden 8",
+            "slug": "materia-golden-8",
+            "date": "2026-03-15",
+            "last_read": null,
+            "review": "<p>Resenha da matéria 8 com acentuação: ção, ã, é.</p>",
+            "active": 1,
+            "is_favorite": 1
+        },
+        {
+            "id": 9,
+            "client_id": 1,
+            "middle_id": 1,
+            "subject_matter_id": 1,
+            "vehicle_id": 1,
+            "editorial_id": 1,
+            "user_id": 1,
+            "classification_id": 1,
+            "exhibition_id": 1,
+            "source_id": 1,
+            "title": "Nova matéria de teste",
+            "slug": "nova-materia-de-teste",
+            "date": "2026-03-10",
+            "last_read": null,
+            "review": "Revisada",
+            "active": 1,
+            "is_favorite": 0
+        },
+        {
+            "id": 10,
+            "client_id": 1,
+            "middle_id": 1,
+            "subject_matter_id": 1,
+            "vehicle_id": 1,
+            "editorial_id": 1,
+            "user_id": 1,
+            "classification_id": 1,
+            "exhibition_id": 1,
+            "source_id": 1,
+            "title": "Nova matéria de teste",
+            "slug": "nova-materia-de-teste-1",
+            "date": "2026-03-10",
+            "last_read": null,
+            "review": "Resenha nova",
+            "active": 1,
+            "is_favorite": 0
+        }
+    ]
+}

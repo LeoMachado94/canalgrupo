@@ -2,11 +2,14 @@
 
 namespace App\Models;
 
+use App\Models\Concerns\SerializesDatesAsDatabaseFormat;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 class Editorial extends Model
 {
+    use SerializesDatesAsDatabaseFormat;
+
     /**
      * The attributes that are mass assignable.
      *

@@ -2,13 +2,14 @@
 
 namespace App\Models;
 
+use App\Models\Concerns\SerializesDatesAsDatabaseFormat;
 use Carbon\Carbon;
-use Guiliredu\BrazilianCityMigrationSeed\Models\City;
-use Guiliredu\BrazilianCityMigrationSeed\Models\State;
 use Illuminate\Database\Eloquent\Model;
 
 class Summary extends Model
 {
+    use SerializesDatesAsDatabaseFormat;
+
     /**
      * The attributes that are mass assignable.
      *

@@ -2,10 +2,13 @@
 
 namespace App\Models\Antigo;
 
+use App\Models\Concerns\SerializesDatesAsDatabaseFormat;
 use Illuminate\Database\Eloquent\Model;
 
 class Arquivo extends Model
 {
+    use SerializesDatesAsDatabaseFormat;
+
     protected $table = 'arquivos';
     protected $primaryKey = 'CODARQUIVO';
     protected $connection = 'origin';

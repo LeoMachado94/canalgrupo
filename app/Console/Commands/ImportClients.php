@@ -2,10 +2,10 @@
 
 namespace App\Console\Commands;
 
-use Guiliredu\BrazilianCityMigrationSeed\Models\City;
+use App\Models\City;
 use App\Models\Client;
 use App\Models\Antigo\Cliente;
-use Guiliredu\BrazilianCityMigrationSeed\Models\State;
+use App\Models\State;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Console\Command;

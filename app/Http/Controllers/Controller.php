@@ -18,7 +18,7 @@ class Controller extends BaseController
         string $attrName,
         string $destiny,
         string $fileName,
-        string $deleteFile = null
+        ?string $deleteFile = null
     ) {
         if (!empty($deleteFile) && Storage::exists($deleteFile)) {
             Storage::delete($deleteFile);
