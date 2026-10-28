@@ -265,7 +265,7 @@ class ReportsController extends Controller
             }
 
             return $builder;
-        })->orderBy('date', 'desc')->get();
+        })->with(['subject', 'vehicle', 'editorial', 'classification', 'source'])->orderBy('date', 'desc')->get();
 
         if (!empty($request->input('classification_id'))) {
             $data['classification'] = Classification::find($request->input('classification_id'));

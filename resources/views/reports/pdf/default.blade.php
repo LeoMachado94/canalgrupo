@@ -6,8 +6,39 @@
     <meta name="author" content="#">
     <title>Relatório - {{ date('Y-m-d') }} - {{ $client->name }}</title>
     <link rel="icon" href="{{ asset('template/favicon.png') }}" type="image/png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {{-- Bootstrap via CDN deixava o dompdf ~6x mais lento; só as classes usadas abaixo --}}
     <style>
+        body {
+            font-family: sans-serif;
+            font-size: 14px;
+            color: #212529;
+        }
+        .p-3 {
+            padding: 1rem;
+        }
+        .container-fluid {
+            width: 100%;
+            padding: 0 15px;
+        }
+        .card-header {
+            padding: .75rem 1.25rem;
+        }
+        .bg-danger {
+            background-color: #dc3545;
+        }
+        .text-white {
+            color: #fff;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            margin: 1rem 0;
+        }
+        .table {
+            width: 100%;
+            margin-bottom: 1rem;
+            border-collapse: collapse;
+        }
         .btn-link {
             color: #E54B39;
             text-align: center;

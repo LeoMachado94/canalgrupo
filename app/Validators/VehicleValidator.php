@@ -11,7 +11,7 @@ class VehicleValidator extends LaravelValidator {
             'city_id'  => ['required', 'integer'],
             'middle_id'  => ['required', 'integer'],
             'name'  => ['required', 'string', 'max:128'],
-            'description'  => ['sometimes', 'string'],
+            'description'  => ['sometimes', 'nullable', 'string'],
             'active' => ['sometimes', 'boolean']
         ],
         ValidatorInterface::RULE_UPDATE => [
@@ -19,7 +19,7 @@ class VehicleValidator extends LaravelValidator {
             'city_id'  => ['sometimes', 'integer'],
             'middle_id'  => ['sometimes', 'integer'],
             'name'  => ['sometimes', 'string', 'max:128'],
-            'description'  => ['sometimes', 'string'],
+            'description'  => ['sometimes', 'nullable', 'string'],
             'active' => ['sometimes', 'boolean']
         ]
     ];

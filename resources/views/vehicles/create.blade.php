@@ -131,6 +131,11 @@
         $("#Active").val(active).trigger('change');
     }
 
+    function setMiddle(middle_id)
+    {
+        $("#Middle").val(middle_id).trigger('change');
+    }
+
     $(document).ready(function() {
         $('.btn-save').on('click', function (){
             $('.form-save').submit();
