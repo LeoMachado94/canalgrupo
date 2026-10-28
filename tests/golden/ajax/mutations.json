@@ -1,0 +1,107 @@
+{
+    "subject_store": {
+        "success": true,
+        "title": "Cadastrado!",
+        "message": "Assunto cadastrado com sucesso",
+        "icon": "success",
+        "subject": {
+            "client_id": 2,
+            "title": "Turismo",
+            "user_id": 1,
+            "updated_at": "2026-03-15 10:00:00",
+            "created_at": "2026-03-15 10:00:00",
+            "id": 4
+        }
+    },
+    "subject_store_invalid": {
+        "success": false,
+        "title": "Erro ao cadastrar!",
+        "message": "O campo client id é obrigatório.",
+        "icon": "error"
+    },
+    "clipping_destroy": {
+        "success": true,
+        "title": "Removido!",
+        "message": "Clipping removido com sucesso!",
+        "icon": "success"
+    },
+    "clipping_destroy_missing": {
+        "success": false,
+        "title": "Erro ao remover clipping.",
+        "message": "No query results for model [App\\Models\\Clipping] 999",
+        "icon": "error"
+    },
+    "summary_destroy": {
+        "success": true,
+        "title": "Removido!",
+        "message": "Resumo removido com sucesso!",
+        "icon": "success"
+    },
+    "vehicle_destroy_missing": {
+        "success": true,
+        "title": "Erro ao remover veículo.",
+        "message": "No query results for model [App\\Models\\Vehicle] 999",
+        "icon": "error"
+    },
+    "editorial_destroy": {
+        "success": true,
+        "title": "Removido!",
+        "message": "Editorial/Programa removido com sucesso!",
+        "icon": "success"
+    },
+    "user_destroy_missing": {
+        "success": true,
+        "title": "Erro ao remover usuário.",
+        "message": "No query results for model [App\\Models\\User] 999",
+        "icon": "error"
+    },
+    "client_destroy_missing": {
+        "success": true,
+        "title": "Erro ao remover cliente.",
+        "message": "No query results for model [App\\Models\\Client] 999",
+        "icon": "error"
+    },
+    "subject_destroy_missing": {
+        "success": true,
+        "title": "Erro ao remover assunto.",
+        "message": "No query results for model [App\\Models\\SubjectMatter] 999",
+        "icon": "error"
+    },
+    "subjects_table": [
+        {
+            "id": 1,
+            "client_id": 1,
+            "user_id": 1,
+            "title": "Saúde",
+            "active": 1
+        },
+        {
+            "id": 2,
+            "client_id": 1,
+            "user_id": 1,
+            "title": "Educação",
+            "active": 1
+        },
+        {
+            "id": 3,
+            "client_id": 2,
+            "user_id": 2,
+            "title": "Obras",
+            "active": 1
+        },
+        {
+            "id": 4,
+            "client_id": 2,
+            "user_id": 1,
+            "title": "Turismo",
+            "active": 1
+        }
+    ],
+    "clipping_ids": [
+        1,
+        2,
+        5,
+        6,
+        8
+    ]
+}

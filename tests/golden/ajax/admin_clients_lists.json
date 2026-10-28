@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "state_id": 1,
+        "city_id": 1,
+        "user_id": 1,
+        "name": "Cliente Alfa",
+        "logo": "clients/avatars/avatar_1.png",
+        "cnpj": "11.111.111/0001-11",
+        "contact": "Ana",
+        "email": "alfa@golden.test",
+        "active": 1,
+        "remember_token": null,
+        "created_at": "2026-01-10 08:30:00",
+        "updated_at": "2026-01-11 09:45:00"
+    },
+    {
+        "id": 2,
+        "state_id": 2,
+        "city_id": 3,
+        "user_id": 1,
+        "name": "Cliente Beta",
+        "logo": null,
+        "cnpj": "22.222.222/0001-22",
+        "contact": "Bruno",
+        "email": "beta@golden.test",
+        "active": 1,
+        "remember_token": null,
+        "created_at": "2026-01-10 08:30:00",
+        "updated_at": "2026-01-11 09:45:00"
+    }
+]

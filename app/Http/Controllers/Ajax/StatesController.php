@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Ajax;
 
 use App\Http\Controllers\Controller;
-use Guiliredu\BrazilianCityMigrationSeed\Models\State;
+use App\Models\State;
 
 class StatesController extends Controller
 {

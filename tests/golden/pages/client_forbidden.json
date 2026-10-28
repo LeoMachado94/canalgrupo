@@ -1,0 +1,22 @@
+{
+    "/clients": {
+        "status": 302,
+        "location": "http://localhost/login"
+    },
+    "/users": {
+        "status": 302,
+        "location": "http://localhost/login"
+    },
+    "/reports": {
+        "status": 302,
+        "location": "http://localhost/login"
+    },
+    "/favorites": {
+        "status": 302,
+        "location": "http://localhost/login"
+    },
+    "/login": {
+        "status": 302,
+        "location": "http://localhost/home"
+    }
+}

@@ -2,10 +2,13 @@
 
 namespace App\Models\Antigo;
 
+use App\Models\Concerns\SerializesDatesAsDatabaseFormat;
 use Illuminate\Database\Eloquent\Model;
 
 class Cidade extends Model
 {
+    use SerializesDatesAsDatabaseFormat;
+
     protected $table = 'cidade';
     protected $primaryKey = 'CODCIDADE';
     protected $connection = 'origin';

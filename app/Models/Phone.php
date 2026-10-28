@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use App\Models\Concerns\SerializesDatesAsDatabaseFormat;
 use Illuminate\Database\Eloquent\Model;
 
 class Phone extends Model
 {
+    use SerializesDatesAsDatabaseFormat;
+
     protected $table = 'client_has_phones';
 
     /**

@@ -49,8 +49,8 @@ class ReportsController extends Controller
 
         $url = Storage::disk('spaces')->url($path);
 
-        $mime = Storage::disk('spaces')->getDriver()->getMimetype($url);
-        $size = Storage::disk('spaces')->getDriver()->getSize($url);
+        $mime = Storage::disk('spaces')->mimeType($url);
+        $size = Storage::disk('spaces')->size($url);
 
         $response =  [
             'Content-Type' => $mime,

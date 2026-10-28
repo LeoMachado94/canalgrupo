@@ -1,0 +1,87 @@
+{
+    "draw": 0,
+    "recordsTotal": 2,
+    "recordsFiltered": 2,
+    "data": [
+        {
+            "id": 1,
+            "state_id": 1,
+            "city_id": 1,
+            "middle_id": 1,
+            "name": "Gazeta",
+            "description": "Jornal diário",
+            "active": 1,
+            "created_at": "2026-01-10 08:30:00",
+            "updated_at": "2026-01-11 09:45:00",
+            "state": {
+                "id": 1,
+                "title": "Paraná",
+                "letter": "PR",
+                "iso": 41,
+                "slug": "parana",
+                "population": 11000000
+            },
+            "city": {
+                "id": 1,
+                "state_id": 1,
+                "title": "Curitiba",
+                "iso": 4106902,
+                "iso_ddd": 41,
+                "status": 1,
+                "slug": "curitiba",
+                "population": 1900000,
+                "lat": "-25.42000000",
+                "long": "-49.27000000",
+                "income_per_capita": "1500.50"
+            },
+            "middle": {
+                "id": 1,
+                "name": "Impresso",
+                "icon": "fa-newspaper",
+                "background_class": "bg-blue",
+                "created_at": "2026-01-10 08:30:00",
+                "updated_at": "2026-01-11 09:45:00"
+            }
+        },
+        {
+            "id": 2,
+            "state_id": 2,
+            "city_id": 3,
+            "middle_id": 2,
+            "name": "TV Campinas",
+            "description": null,
+            "active": 1,
+            "created_at": "2026-01-10 08:30:00",
+            "updated_at": "2026-01-11 09:45:00",
+            "state": {
+                "id": 2,
+                "title": "São Paulo",
+                "letter": "SP",
+                "iso": 35,
+                "slug": "sao-paulo",
+                "population": 46000000
+            },
+            "city": {
+                "id": 3,
+                "state_id": 2,
+                "title": "Campinas",
+                "iso": 3509502,
+                "iso_ddd": 19,
+                "status": 1,
+                "slug": "campinas",
+                "population": 1200000,
+                "lat": "-22.90000000",
+                "long": "-47.06000000",
+                "income_per_capita": "1700.00"
+            },
+            "middle": {
+                "id": 2,
+                "name": "TV",
+                "icon": "fa-tv",
+                "background_class": "bg-green",
+                "created_at": "2026-01-10 08:30:00",
+                "updated_at": "2026-01-11 09:45:00"
+            }
+        }
+    ]
+}

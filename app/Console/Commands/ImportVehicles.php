@@ -2,9 +2,9 @@
 
 namespace App\Console\Commands;
 
-use Guiliredu\BrazilianCityMigrationSeed\Models\City;
+use App\Models\City;
 use App\Models\Middle;
-use Guiliredu\BrazilianCityMigrationSeed\Models\State;
+use App\Models\State;
 use App\Models\Vehicle;
 use App\Models\Antigo\Veiculo;
 use Carbon\Carbon;

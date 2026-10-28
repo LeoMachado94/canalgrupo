@@ -2,11 +2,14 @@
 
 namespace App\Models;
 
+use App\Models\Concerns\SerializesDatesAsDatabaseFormat;
 use Illuminate\Database\Eloquent\Model;
 use function foo\func;
 
 class ClippingFile extends Model
 {
+    use SerializesDatesAsDatabaseFormat;
+
     protected $table = 'clipping_has_files';
     /**
      * The attributes that are mass assignable.

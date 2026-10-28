@@ -1,0 +1,31 @@
+{
+    "draw": 0,
+    "recordsTotal": 2,
+    "recordsFiltered": 2,
+    "data": [
+        {
+            "id": 1,
+            "name": "Admin Golden",
+            "email": "admin@golden.test",
+            "email_verified_at": null,
+            "active": 1,
+            "avatar": null,
+            "access_level": 1,
+            "created_at": "2026-01-10 08:30:00",
+            "updated_at": "2026-01-11 09:45:00",
+            "deleted_at": null
+        },
+        {
+            "id": 2,
+            "name": "Monitor Golden",
+            "email": "monitor@golden.test",
+            "email_verified_at": null,
+            "active": 1,
+            "avatar": "users/avatars/avatar_1.png",
+            "access_level": 3,
+            "created_at": "2026-01-10 08:30:00",
+            "updated_at": "2026-01-11 09:45:00",
+            "deleted_at": null
+        }
+    ]
+}

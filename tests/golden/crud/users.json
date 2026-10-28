@@ -1,0 +1,82 @@
+{
+    "store_invalid": {
+        "status": 302,
+        "location": "http://localhost",
+        "flash": [],
+        "errors": {
+            "name": [
+                "O campo nome é obrigatório."
+            ],
+            "email": [
+                "O campo email já está sendo utilizado."
+            ],
+            "password": [
+                "O campo senha é obrigatório."
+            ]
+        }
+    },
+    "store": {
+        "status": 302,
+        "location": "http://localhost/users",
+        "flash": {
+            "success": true,
+            "title": "Cadastrado!",
+            "message": "Usuário cadastrado com sucesso",
+            "icon": "success"
+        },
+        "errors": []
+    },
+    "update": {
+        "status": 302,
+        "location": "http://localhost/users",
+        "flash": {
+            "success": true,
+            "title": "Atualizado!",
+            "message": "Usuário atualizado com sucesso",
+            "icon": "success"
+        },
+        "errors": []
+    },
+    "update_duplicate_email": {
+        "status": 302,
+        "location": "http://localhost",
+        "flash": [],
+        "errors": {
+            "email": [
+                "O campo email já está sendo utilizado."
+            ]
+        }
+    },
+    "users": [
+        {
+            "id": 1,
+            "name": "Admin Golden",
+            "email": "admin@golden.test",
+            "email_verified_at": null,
+            "active": 1,
+            "avatar": null,
+            "access_level": 1,
+            "deleted_at": null
+        },
+        {
+            "id": 2,
+            "name": "Monitor Renomeado",
+            "email": "monitor@golden.test",
+            "email_verified_at": null,
+            "active": 1,
+            "avatar": "users/avatars/avatar_1.png",
+            "access_level": 3,
+            "deleted_at": null
+        },
+        {
+            "id": 3,
+            "name": "Novo Usuário",
+            "email": "novo@golden.test",
+            "email_verified_at": null,
+            "active": 1,
+            "avatar": null,
+            "access_level": null,
+            "deleted_at": null
+        }
+    ]
+}

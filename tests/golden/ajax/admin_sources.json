@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Espontânea",
+        "active": 1,
+        "created_at": "2026-01-10 08:30:00",
+        "updated_at": "2026-01-11 09:45:00"
+    },
+    {
+        "id": 2,
+        "name": "Release",
+        "active": 1,
+        "created_at": "2026-01-10 08:30:00",
+        "updated_at": "2026-01-11 09:45:00"
+    }
+]

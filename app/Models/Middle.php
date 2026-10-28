@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use App\Models\Concerns\SerializesDatesAsDatabaseFormat;
 use Illuminate\Database\Eloquent\Model;
 
 class Middle extends Model
 {
+    use SerializesDatesAsDatabaseFormat;
+
     /**
      * The attributes that are mass assignable.
      *

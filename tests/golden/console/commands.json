@@ -1,0 +1,59 @@
+{
+    "import:client-avatar": {
+        "description": "Importar clientes do antigo sistema canalgrupo",
+        "arguments": [],
+        "options": []
+    },
+    "import:clients": {
+        "description": "Importar clientes do antigo sistema canalgrupo",
+        "arguments": [],
+        "options": []
+    },
+    "import:clipping-files": {
+        "description": "Importar arquivos de clippings antigo sistema canalgrupo",
+        "arguments": [],
+        "options": []
+    },
+    "import:clippings": {
+        "description": "Importar clippings do antigo sistema canalgrupo",
+        "arguments": [],
+        "options": []
+    },
+    "import:clippings-db": {
+        "description": "Importar clippings do antigo sistema canalgrupo",
+        "arguments": [],
+        "options": []
+    },
+    "import:editorials": {
+        "description": "Importar editoriais do antigo sistema canalgrupo",
+        "arguments": [],
+        "options": []
+    },
+    "import:subjects": {
+        "description": "Importar assuntos do antigo sistema canalgrupo",
+        "arguments": [],
+        "options": []
+    },
+    "import:users": {
+        "description": "Importar usuários do antigo sistema canalgrupo",
+        "arguments": [],
+        "options": []
+    },
+    "import:vehicles": {
+        "description": "Importar veículos do antigo sistema canalgrupo",
+        "arguments": [],
+        "options": []
+    },
+    "log:clear": {
+        "description": "Remove every log files in the log directory",
+        "arguments": [],
+        "options": {
+            "keep-last": [
+                null,
+                false,
+                false,
+                false
+            ]
+        }
+    }
+}

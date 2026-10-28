@@ -1,0 +1,87 @@
+{
+    "draw": 0,
+    "recordsTotal": 1,
+    "recordsFiltered": 1,
+    "data": [
+        {
+            "id": 8,
+            "client_id": 1,
+            "middle_id": 1,
+            "subject_matter_id": 1,
+            "vehicle_id": 1,
+            "editorial_id": 1,
+            "user_id": 1,
+            "classification_id": 3,
+            "exhibition_id": 1,
+            "source_id": 1,
+            "title": "Matéria golden 8",
+            "slug": "materia-golden-8",
+            "date": "2026-03-15",
+            "last_read": null,
+            "review": "&lt;p&gt;Resenha da matéria 8 com acentuação: ção, ã, é.&lt;/p&gt;",
+            "active": 1,
+            "is_favorite": 1,
+            "created_at": "2026-01-17 10:07:00",
+            "updated_at": "2026-01-20 12:00:00",
+            "created": "2026-01-17",
+            "client": {
+                "id": 1,
+                "state_id": 1,
+                "city_id": 1,
+                "user_id": 1,
+                "name": "Cliente Alfa",
+                "logo": "clients/avatars/avatar_1.png",
+                "cnpj": "11.111.111/0001-11",
+                "contact": "Ana",
+                "email": "alfa@golden.test",
+                "active": 1,
+                "remember_token": null,
+                "created_at": "2026-01-10 08:30:00",
+                "updated_at": "2026-01-11 09:45:00"
+            },
+            "exhibition": {
+                "id": 1,
+                "name": "Capa",
+                "active": 1,
+                "created_at": "2026-01-10 08:30:00",
+                "updated_at": "2026-01-11 09:45:00"
+            },
+            "subject": {
+                "id": 1,
+                "client_id": 1,
+                "user_id": 1,
+                "title": "Saúde",
+                "active": 1,
+                "created_at": "2026-01-10 08:30:00",
+                "updated_at": "2026-01-11 09:45:00"
+            },
+            "middle": {
+                "id": 1,
+                "name": "Impresso",
+                "icon": "fa-newspaper",
+                "background_class": "bg-blue",
+                "created_at": "2026-01-10 08:30:00",
+                "updated_at": "2026-01-11 09:45:00"
+            },
+            "classification": {
+                "id": 3,
+                "name": "Negativa",
+                "active": 1,
+                "created_at": "2026-01-10 08:30:00",
+                "updated_at": "2026-01-11 09:45:00"
+            },
+            "user": {
+                "id": 1,
+                "name": "Admin Golden",
+                "email": "admin@golden.test",
+                "email_verified_at": null,
+                "active": 1,
+                "avatar": null,
+                "access_level": 1,
+                "created_at": "2026-01-10 08:30:00",
+                "updated_at": "2026-01-11 09:45:00",
+                "deleted_at": null
+            }
+        }
+    ]
+}
